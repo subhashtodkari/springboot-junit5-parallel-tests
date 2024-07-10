@@ -1,10 +1,10 @@
 package org.example.springboot.demo;
 
-import org.junit.jupiter.api.Test;
+import org.example.springboot.demo.api.FlakyTest;
 
 public class TestClass1 extends AbstractBaseTest {
 
-    @Test
+    @FlakyTest
     public void method_1_1() {
         try {
             logger.info("Started method_1_1.........");
@@ -21,7 +21,7 @@ public class TestClass1 extends AbstractBaseTest {
         }
     }
 
-    @Test
+    @FlakyTest
     public void method_1_2() {
         try {
             logger.info("Started method_1_2.........");
